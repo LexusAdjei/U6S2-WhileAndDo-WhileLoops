@@ -7,7 +7,7 @@ public class DoWhileLoop2 {
 
         int i = 0;
         while (i < nums.length){
-            if(nums[i] % 2 == 0){
+            if(nums[i] % 2 !=  0){
                 System.out.println(nums[i] + " ");
             }
             i++;

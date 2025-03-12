@@ -4,15 +4,20 @@ import java.util.Scanner;
 public class WhileLoop2 {
     public static String whileLoopTwo(){
         String response = "";
-        System.out.println("Please enter a number to count to: ");
         Scanner in = new Scanner(System.in);
-        in.nextInt();
 
-        int number = Integer.parseInt(in.nextLine());
+        int num = -1;
 
-        while(in <= number){
-            System.out.println("The Current Number is: " + number);
+        System.out.println("Please enter a number to count to: ");
+        int count = in.nextInt();
+
+        while(num < count){
+            num = num + 1;
+            response +=("\nThe Current Number is: " + num);
         }
+        response += ("\nWe are done");
+
+
 
 
         return response;

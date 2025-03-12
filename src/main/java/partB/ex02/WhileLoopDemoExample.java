@@ -7,7 +7,7 @@ public class WhileLoopDemoExample {
 
         int num = 0;
         response += ("Let's count to 10!");
-        while(num > 10){
+        while(num < 10){
             num = num + 1;
             response += ("Number: " + num);
         }
